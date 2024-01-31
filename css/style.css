@@ -17,19 +17,24 @@ img {
     max-width: 100%;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 a:hover{
     transition: 0.3s;
     color: #00AEEF;
 }
+
 .wrapper{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
-.custom-btn{
+.log-btn{
+    
+        padding: 13px 30px;
+        
+        font-size: 16px;
+    
     margin: 0 2px;
-    padding: 10px 20px;
     color: #fff;
     letter-spacing: 1px;
     line-height: 25px;
@@ -37,7 +42,21 @@ a:hover{
     text-decoration: none;
     transition: 0.3s;
 }
-.custom-btn:hover{
+.custom-btn{
+    
+        padding: 13px 30px;
+        border-radius: 8px;
+        font-size: 16px;
+    
+    margin: 0 2px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+    background-color: #2e367d;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.custom-btn:hover,.log-btn:hover{
     background-color: #00AEEF;
     color: #fff;
 
@@ -46,7 +65,9 @@ header, section, footer{
     width: 100%;
     height: fit-content;
 }
-
+.bg-color-gray{
+    background-color: #f5f7fa;
+}
 /*==============================================
 ===============Header area style   ==============
 ================================================*/
@@ -101,30 +122,31 @@ header, section, footer{
     margin: 0;
     display: block;
     padding: 10px 13px;
-    color: #000;
+    color: #1e266d;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #nav ul li a:hover{
-    color: #fff;
-    background-color: #292929; /* for default bg color */
+    color: #00AEEF;
+    /* for default bg color */
 }
-#nav ul li:hover a{  /* cause a tag is has block property power and ul or li dont have any margin or padding */
-    background-color: #1a8b73;
-}
+
 #nav ul ul li:hover a{
     background-color: #10b943;
 }
 
 /* Dorpdown Menu  */
-#nav ul ul{
+#nav ul ul {
     position: absolute;
     min-width: 200px;
     top: 100%;
+    overflow: hidden;
     left: 0;
     z-index: 99999;
     display: none;
-    
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 8px;
 }
 
 #nav ul li:hover > ul{
@@ -138,28 +160,36 @@ header, section, footer{
     display: block;
 }
 
-#nav ul ul li:hover{
-    border-left: 3px solid #292929;
-}
 #nav ul ul li:hover a{
-    background-color: #16a085;
+    background-color: #f8f9fa;
 }
 #nav ul ul ul li:hover a{
-    background-color: #31c0a1;
+    background-color: #f8f9fa;
 }
 #nav ul ul ul{
     top: 0;
     left: 100%;
 }
 
-
+.menu-btn{
+    display: none;
+}
+.menu-btn a {
+    text-decoration: none;
+    font-size: 28px;
+    color: #1e266d;
+}
+.menu-btn a:hover {
+    
+    color: #00AEEF;
+}
 
 /*==============================================
 ===============tab content style   ==================
 ================================================*/
-#tab_content h2{
+#tab_content h2 {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: 2.1em;
     color: #07324f;
 }
@@ -174,12 +204,14 @@ header, section, footer{
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
 }
-.product_card .card{
-    
+.product_card .card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
 }
-.product_card .card .box1{
-    height: 150px;
-    width: 100%;
+.product_card .card {
+    border: none;
+    border-radius: 8px;
     overflow: hidden;
 }
 .product_card .card .box1 span {
@@ -205,8 +237,8 @@ header, section, footer{
     width: 93%;
     background-color: #fff;
     margin: 0 auto;
-    padding: 10px;
-    box-shadow: 0px -1px 5px #ddd;
+    padding: 20px 10px;
+    box-shadow: 0 8px 28px 2px rgba(61, 61, 61, 0.07);
     border-radius: 10px;
     transition: 0.6s;
 }
@@ -228,8 +260,8 @@ header, section, footer{
 
 }
 .product_card .card .box2 .inner-box a {
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-right: 7px;
+    margin-bottom: 10px;
     padding: 10px 15px;
     border-radius: 30px;
     font-size: 15px;
@@ -265,11 +297,12 @@ header, section, footer{
     color: #1e266d;
 }
 #banner_area .left-box p {
-    font-size: 1.6em;
+    font-size: 22px;
     color: #1e266d;
     line-height: 28px;
     font-weight: 300;
     margin: 20px 0;
+    width: 77%;
 }
 #banner_area .left-box a {
     margin-top: 10px;
@@ -328,7 +361,7 @@ header, section, footer{
     background-color: #1e266d;
 }
 #featured_area .main-box .child-box h3 {
-    font-size: 1.7vw;
+    font-size: 20px;
 }
 
 /*==============================================
@@ -375,13 +408,16 @@ header, section, footer{
 /*==============================================
 ===============support_section Section style   ==================
 ================================================*/
+#support_section{
+    background-color: #f5f7fa;
+}
 #support_section .main-box {
     padding: 0 10px;
     display: flex;
     height: 500px;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f7fa;
+
 }
 #support_section .main-box .child-box.left-box{
    width: 60%;
@@ -423,13 +459,16 @@ header, section, footer{
 /*==============================================
 ===============earning_section Section style   ==================
 ================================================*/
+#earning_section {
+    background-color: #fafafa;
+}
 #earning_section .main-box {
     padding: 0 10px;
     display: flex;
     height: 500px;
     justify-content: space-between;
     align-items: center;
-    background-color: #fafafa;
+
 }
 #earning_section .main-box .child-box.right-box{
    width: 60%;
@@ -471,6 +510,9 @@ header, section, footer{
 ===============privalge_card_section Section style   ==================
 ================================================*/
 
+#privalge_card_section{
+    background-color: #f5f7fa;
+}
 #privalge_card_section .main-box {
     
     padding: 30px 10px;
@@ -478,7 +520,7 @@ header, section, footer{
     min-height: 500px;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f7fa;
+
 }
 
 #privalge_card_section .main-box .child-box.left-box{
@@ -699,7 +741,7 @@ width: 60%;
     right: 0;
     display: block;
     padding: 20px 58px 50px 20px;
-    box-shadow: 2px 3px 12px gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     font-size: 14px;
 }
 #success_story .carousel-indicators {
@@ -801,7 +843,9 @@ width: 60%;
     Courses page
 ==========================*/
 /* page control section  */
-#page_control {}
+#page_control {
+    margin: 25px 0;
+}
 #page_control .main-box{
     display: flex;
     justify-content: space-between;
@@ -815,8 +859,95 @@ width: 60%;
     text-transform: capitalize;
 
 }
+#page_control #nav li a:hover{
+    background-color: #1e266d;
+    color: #fff;
+}
 #page_control #nav li a.active{
     background-color: #1e266d;
     color: #fff;
+
+}
+
+/*===========================================
+   Our Mentors Page
+   ==============================================*/
+
+#mentors_nav{
+    background-color: #1e266d;
+}
+#mentors_nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#mentors_nav ul li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#mentors_nav ul li a{
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+#mentors_nav ul li a:hover{
+background-color: #00AEEF;
+}
+#mentors_nav ul li a.active{
+background-color: #00AEEF;
+}
+.mentors-profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mentors-profile .profile-details{
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.mentors-profile .profile-details .pic{}
+
+.mentors-profile .profile-details .pic img{}
+.mentors-profile .profile-details h3 {
+    text-align: center;
+    color: #0c2f54;
+    font-size: 22px;
+    padding: 10px 0;
+    margin: 0;
+}
+.mentors-profile .profile-details p {
+    text-align: center;
+    color: #0c2f54;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 0;
+}
+.mentors-profile .profile-details a{
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.owl-carousel-item {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    width: 270px;
+    margin-right: 0px;
+}
+.owl-carousel-item .icon {
+    width: 53%;
+    margin: 0 auto;
+}
+.owl-carousel-item .icon img {
+
+}
+.owl-carousel-item p{
+ text-align: center;
 
 }
