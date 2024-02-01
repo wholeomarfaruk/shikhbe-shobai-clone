@@ -23,5 +23,5 @@
     <li><a href="#">SS Junior</a></li>
     <li><a href="#">Events</a></li>
     <li><a href="#">Comunity</a></li>
-    <li><a href="#">Live</a></li>
+    <li><a class="live-menu-link" href="#">Live</a></li>
 </ul>

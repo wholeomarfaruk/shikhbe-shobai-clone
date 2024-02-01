@@ -36,7 +36,9 @@
 #nav ul {
     text-align: center;
 }
-
+#header_area #header-area-inner {
+    height: auto;
+}
 }
 
 
@@ -81,6 +83,9 @@
 #nav ul {
     text-align: center;
 }
+#header_area #header-area-inner {
+    height: auto;
+}
 
 }
 
@@ -94,4 +99,5 @@
        
         max-width: 1140px;
     }
+    
 }

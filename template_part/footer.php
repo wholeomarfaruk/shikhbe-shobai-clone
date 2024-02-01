@@ -4,6 +4,12 @@
  * This is footer part
  */
 ?>
+<section id="fixed-section">
+    <div class="main-box">
+        <div class="child backtotop"><a class="btn" href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+        <div class="child livechat"><a class="btn-round" href="javascript:void(0)"><i class="fa-solid fa-comment"></i></a></div>
+    </div>
+</section>
 <footer id="footer_area">
     <div class="wrapper">
         <div id="contact_info">

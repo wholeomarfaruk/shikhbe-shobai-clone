@@ -71,6 +71,13 @@ header, section, footer{
 /*==============================================
 ===============Header area style   ==============
 ================================================*/
+header#header_area {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #fff;
+}
 
 #header_area #header-area-inner {
     position: sticky;
@@ -90,6 +97,7 @@ header, section, footer{
     width: auto;
     height: 100%;
 }
+
 
 /*==============================================
 ===============Navbar style   ==================
@@ -183,7 +191,18 @@ header, section, footer{
     
     color: #00AEEF;
 }
-
+.live-menu-link{
+    text-transform: uppercase !important;
+}
+.live-menu-link::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    margin-top: -5px;
+    border-radius: 50%;
+}
 /*==============================================
 ===============tab content style   ==================
 ================================================*/
@@ -664,8 +683,8 @@ header, section, footer{
 /*=================================
 ===========Footer area style ====
 ===================================*/
-#success_story{
-    margin-top: 40px;
+#success_story {
+    margin: 60px 0;
 }
 #success_story .main-box{
     height: 600px;
@@ -783,6 +802,50 @@ width: 60%;
     opacity: 0.5;
 }
 
+/*=================================
+===========fixed-section style ====
+===================================*/
+#fixed-section {
+    position: fixed;
+    z-index: 999999;
+    bottom: 0;
+    right: 0;
+    width: fit-content;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#fixed-section .main-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#fixed-section .child{
+    display: inline-block;
+    object-fit: contain;
+    margin: 0 8px;
+    
+
+   
+}
+#fixed-section .child a{
+    background-color: #1e266d;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    
+    
+
+}
+#fixed-section .child a.btn {
+    padding: 4px 15px;
+    border-radius: 8px;
+}
+#fixed-section .child a.btn-round {
+    border-radius: 50%;
+    padding: 8px 12px;
+}
 /*=================================
 ===========Footer area style ====
 ===================================*/
@@ -903,6 +966,7 @@ background-color: #00AEEF;
 }
 .mentors-profile {
     display: grid;
+    grid-gap: 15px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .mentors-profile .profile-details{

@@ -223,6 +223,21 @@ include_once('template_part/header.php');
                                         <a class="log-btn" href="#">View Details</a>
                                     </div>
                                 </div>
+                                <div class="profile-details">
+                                    <div class="pic"><img src="img/1692274935.jpg" alt=""></div>
+                                    <div class="details">
+                                        <h3>আলী মুজাহিদ</h3>
+                                        <p>Full Stack Web Developer</p>
+                                        <a class="log-btn" href="#">View Details</a>
+                                    </div>
+                                </div><div class="profile-details">
+                                    <div class="pic"><img src="img/1692274935.jpg" alt=""></div>
+                                    <div class="details">
+                                        <h3>আলী মুজাহিদ</h3>
+                                        <p>Full Stack Web Developer</p>
+                                        <a class="log-btn" href="#">View Details</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
