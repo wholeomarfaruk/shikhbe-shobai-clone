@@ -17,7 +17,7 @@
             </li>
 
             <li><a href="our-mentors.php">Our Mentors</a></li>
-            <li><a href="#">Privilage Card</a></li>
+            <li><a href="privilege-card.php">Privilage Card</a></li>
         </ul>
     </li>
     <li><a href="#">SS Junior</a></li>
