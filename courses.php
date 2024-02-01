@@ -11,7 +11,7 @@ include_once('template_part/header.php');
 //Content
 
 ?>
-<section id="page_control">
+<section class="page_control">
     <div class="wrapper">
         <div class="main-box">
             <div class="child-box left-box">
