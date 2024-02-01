@@ -584,7 +584,9 @@ header#header_area {
 /*==============================================
 ===============life_changing_section Section style   ==================
 ================================================*/
-
+section#life_changing_section {
+    margin: 50px 0;
+}
 #life_changing_section .main-box {
     
     padding: 30px 10px;
