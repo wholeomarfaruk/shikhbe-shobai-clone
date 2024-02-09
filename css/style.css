@@ -73,7 +73,7 @@ header, section, footer{
 ===============Header area style   ==============
 ================================================*/
 header#header_area {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -959,6 +959,9 @@ section#life_changing_section {
 }
 #footer_area #contact_info .main-box .child-box{
     padding: 50px;
+}
+#footer_area #contact_info .main-box .child-box h2{
+    font-size: 24px !important;
 }
 /* footer nav  */
 #footer_area #footer_nav .main-box{

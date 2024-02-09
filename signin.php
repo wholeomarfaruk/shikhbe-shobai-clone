@@ -33,7 +33,7 @@ include_once('template_part/header.php');
                     </div>
                     <div class="input-group">
                         <a href="reset.php">Forgot Password?</a> <br>
-                        <a href="sinup.php">New user? Register Here</a>
+                        <a href="signup.php">New user? Register Here</a>
                     </div>
 
                 </form>
