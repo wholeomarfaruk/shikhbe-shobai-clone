@@ -35,10 +35,11 @@ a:hover{
     padding: 0 15px;
 }
 .log-btn {
-    padding: 11px 20px;
-    font-size: 15.2px;
+    padding: 10px 20px;
+    font-size: 15.5px;
     margin: 0.2px;
     color: #fff;
+    font-weight: 400;
     background-color: #2e367d;
     text-decoration: none;
     transition: 0.3s;
@@ -338,14 +339,14 @@ section#banner_area {
     display: inline-block;
 }
 #banner_area .main-box .right-box {
-    position: absolute;
-    top: 117px;
-    width: 787px;
-    right: 174px;
+
 }
 #banner_area .main-box .right-box img {
-    
-   
+    position: absolute;
+    max-width: 56%;
+    z-index: -1;
+    margin-top: -22px;
+    margin-left: -651px;
 }
 
 /*==============================================
