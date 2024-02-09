@@ -15,7 +15,7 @@ include_once('template_part/header.php');
     <div class="wrapper">
         <div class="main-box">
             <div class="child-box left-box">
-                <span>Home/about</span>
+                <span>Home / about</span>
             </div>
             <div class="child-box right-box">
 

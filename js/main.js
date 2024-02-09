@@ -10,5 +10,7 @@ $(document).ready(function(){
         autoplayTimeout:1000,
         autoplayHoverPause:true
     });
-   
+    $('.carousel').carousel({
+        interval: 2000
+      })
   });

@@ -20,8 +20,8 @@
             <li><a href="privilege-card.php">Privilage Card</a></li>
         </ul>
     </li>
-    <li><a href="#">SS Junior</a></li>
-    <li><a href="#">Events</a></li>
-    <li><a href="#">Comunity</a></li>
-    <li><a class="live-menu-link" href="#">Live</a></li>
+    <li><a  href="#">SS Junior</a></li>
+    <li><a target="_blank" href="https://web.facebook.com/ShikhbeShobai/events/">Events</a></li>
+    <li><a target="_blank" href="https://web.facebook.com/groups/shikhbeshobai/">Comunity</a></li>
+    <li><a class="live-menu-link" target="_blank" href="https://web.facebook.com/ShikhbeShobai/live_videos/">Live</a></li>
 </ul>

@@ -43,8 +43,8 @@
                         <?php include('nav_menu.php'); ?>
                     </nav>
                     <div id="user_log_btn">
-                        <a class="log-btn inline-block" href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> SignIn</a>
-                        <a class="log-btn inline-block" href="#"><i class="fa-solid fa-user-plus"></i> SingUp</a>
+                        <a class="log-btn inline-block" href="signin.php"><i class="fa-solid fa-arrow-right-to-bracket"></i> Signin</a>
+                        <a class="log-btn inline-block" href="signup.php"><i class="fa-solid fa-user-plus"></i> Singup</a>
 
                     </div>
                     <div class="menu-btn">
